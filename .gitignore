@@ -1,0 +1,87 @@
+# Compiled output
+*.aux
+*.log
+*.out
+*.dvi
+*.ps
+*.pdf
+*.synctex.gz
+*.toc
+*.idx
+*.ilg
+*.ind
+*.glo
+*.bbl
+*.blg
+*.lof
+*.lot
+*.aux
+*.log
+*.pdf
+*.ps
+
+# Intermediate files
+*.bbl
+*.blg
+*.lof
+*.lot
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+*.rej
+
+# Obsolete files
+*.out
+
+# Compiled data (for some projects)
+*.tex.bak
+
+# Compiled data (for some projects)
+*.tex.log
+
+# Compiled PDF metadata file
+.pdfmeta
+
+# Temporary files
+*.log.old
+*.aux.old
+*.bbl.old
+*.idx.old
+*.ilg.old
+*.ind.old
+*.lof.old
+*.lot.old
+
+
+# Do not track binary data
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.ico
+*.svg
+*.eps
+*.pdf
+*.ps
+
+
+# Your project specific files
+# If you have custom temporary or intermediate files, add them here. For example:
+# *.bbl.tmp
+# *.log.old
+# *.aux.old
+
+# Example:  If you're using a specific image folder
+images/*
+
+
+# Other potentially problematic files
+*.tex.bak
+*.bbl.old
+*.aux.old
+*.out.old

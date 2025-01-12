@@ -1,0 +1,28 @@
+\section{Resources Required}
+
+
+\subsection{Hardware }
+ We will require access to a high-performance computing cluster with at least 4x NVIDIA RTX A6000 GPUs or equivalent, providing sufficient computational power for training deep learning models, particularly the computationally intensive fine-tuning of large language models and processing of video data. A minimum of 128GB of RAM is required for efficient processing of large datasets and models. We will need approximately 5TB of storage for storing datasets, trained models, and intermediate results.
+
+\subsection{ Data Resources}
+
+The following publicly available datasets will be used:
+\begin{itemize}[wide, labelindent=20pt]
+    \item \textbf{Something-Something V2:} For evaluating performance on human-object interaction and fine-grained actions.
+    \item \textbf{HMDB51:} For evaluating performance on a smaller, well-established action recognition dataset.
+    \item \textbf{Kinetics:} For potential use in pre-training or supplementary experiments.
+\end{itemize}
+
+Data will be stored on the university's high-performance computing cluster's storage system, ensuring secure and efficient access.
+
+\subsection{ Software and Tools}
+
+\begin{itemize}[wide, labelindent=20pt]
+    \item \textbf{LLM Access:} We will primarily utilize publicly available pre-trained LLMs (e.g., GPT-Neo, CLIP) and explore fine-tuning them for action description generation. We will consider using paid API access to more powerful LLMs (e.g., GPT-3) if necessary, and budget for this will be requested if required.
+    \item \textbf{Data Augmentation Tools:} Existing data augmentation libraries within TensorFlow/PyTorch and specialized libraries like Albumentations will be used for implementing and applying various augmentation techniques.
+    \item \textbf{Evaluation Tools:} Standard evaluation metrics will be implemented using Python and relevant libraries like Scikit-learn.
+    \item \textbf{Version Control:} Git will be used for version control and collaborative code development, hosted on a platform like GitHub or GitLab.
+
+\end{itemize}
+
+

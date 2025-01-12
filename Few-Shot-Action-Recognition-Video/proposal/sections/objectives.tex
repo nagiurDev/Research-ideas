@@ -1,0 +1,23 @@
+\section{Research Objectives}
+
+This research aims to address the limitations of current few-shot action recognition methods by developing and evaluating a novel framework for LLM-guided data augmentation. The following specific objectives will guide this research.
+
+
+\subsection{Develop a Framework for LLM-based Action Description } %Generation
+
+This objective focuses on leveraging the capabilities of LLMs to generate diverse and semantically rich descriptions of actions. This includes generating variations of a given action, exploring counterfactual scenarios (e.g., "what if the person was holding something while performing the action?"), and generating descriptions that capture subtle nuances in action execution. The success of this objective will be evaluated by the diversity and relevance of the generated descriptions, potentially assessed through human evaluation or by measuring the semantic similarity between generated descriptions and ground truth descriptions.
+
+\subsection{Design an Augmentation Parameter Mapping Method} 
+This objective involves designing and implementing a method for mapping the LLM-generated action descriptions to specific parameters for various data augmentation techniques. This mapping will connect the semantic information from the LLM to the parameters of transformations like Mixup, CutMix, rotation, cropping, and temporal jittering. The effectiveness of this mapping will be assessed by the quality and realism of the resulting augmented samples.
+
+\subsection{Evaluate the Effectiveness of LLM-Guided Augmentation} 
+
+This objective focuses on evaluating the impact of the proposed LLM-guided data augmentation on few-shot action recognition performance. We will conduct experiments on benchmark datasets like Kinetics, Something-Something\cite{goyal2017something}, and HMDB51 \cite{kuehne2011hmdb} using a standard few-shot learning evaluation protocol (e.g., 5-way 1-shot and 5-way 5-shot classification). Performance will be measured using standard metrics such as N-way K-shot accuracy, as well as precision, recall, and F1-score. We aim to demonstrate a statistically significant improvement in performance compared to baseline methods that use standard random data augmentation.
+
+\subsection{Compare with State-of-the-Art Methods} 
+This objective involves comparing the performance of our proposed approach against state-of-the-art few-shot action recognition methods. This comparison will establish the relative effectiveness of LLM-guided augmentation and demonstrate its potential for advancing the field. We will compare against relevant meta-learning and transfer learning based few-shot action recognition methods.
+
+\subsection{Analyze the Impact of Different Design Choices} 
+
+This objective explores the impact of different design choices within the proposed framework. We will investigate the effects of different LLM architectures (e.g., GPT-3 vs. other LLMs), prompting strategies (e.g., zero-shot prompting vs. fine-tuning), and the choice of data augmentation techniques. This analysis will provide insights into the optimal configuration of the proposed framework and contribute to a deeper understanding of the interplay between LLMs and data augmentation for few-shot learning.
+

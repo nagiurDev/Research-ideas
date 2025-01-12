@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\geometry{a4paper, left=0.75in,right=0.75in,top=0.60in,bottom=0.6in}
+
+
+\usepackage{amsmath, amsthm, amssymb} 
+\usepackage{graphicx} 
+\usepackage{hyperref} 
+\usepackage{enumitem} 
+\usepackage{titlesec} 
+\usepackage{abstract} 
+\usepackage{CJKutf8}   
+\usepackage{tabularx}
+\usepackage{booktabs} 
+\usepackage{multirow} 
+
+
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}
+{\thesubsubsection}{1em}{}
+
+
+\begin{document}
+
+\titleformat{\title}[block]{\Large\bfseries}{\thetitle}{1em}{}
+\titlespacing*{\title}{60pt}{50pt}{\fill} 
+
+\title{Title\\
+\large\textit{}} 
+
+\begin{CJK*}{UTF8}{gbsn}
+\author{\textbf{Rahaman Nagiur（纳吉）} \\ Master's degree admission candidate \\ nagiur@outlook.com}
+\date{\today}
+
+\maketitle
+
+
+\input{../sections/abstract.tex}
+
+\keywords{Keywords}
+
+
+\input{../sections/introduction.tex}
+\input{../sections/literature_review.tex}
+\input{../sections/objectives.tex}
+\input{../sections/methodology.tex}
+\input{../sections/outcomes.tex}
+\input{../sections/timeline.tex}
+\input{../sections/resources_required.tex}
+
+
+% References
+\bibliographystyle{plain} 
+\bibliography{references}
+
+\end{CJK*}
+\end{document}
